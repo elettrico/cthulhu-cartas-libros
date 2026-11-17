@@ -1,0 +1,5 @@
+backend: memory
+antialias: best
+img_missing: error
+progress_bars: true
+

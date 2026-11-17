@@ -1,0 +1,186 @@
+version: 1
+
+prioridad:
+  1: "Publicaciones oficiales de Chaosium o de sus editores licenciados"
+  2: "Sitios oficiales o compendios digitales licenciados de La llamada de Cthulhu"
+  3: "Referencias comunitarias reconocidas, como Yog-Sothoth.com o BRP Central"
+  4: "Otros sitios de aficionados; deben reemplazarse cuando aparezca una fuente superior"
+
+criterios:
+  - "Las estadísticas y los nombres de hechizos se conservan; las descripciones se resumen en español."
+  - "Si dos fuentes discrepan, prevalece la de menor número de prioridad."
+  - "El XLSX incluye un origen breve para clasificar y filtrar; las referencias completas y sus URL se registran aquí porque no se imprimen en las cartas."
+
+entradas:
+  "Al Azif|árabe|c. 730": &manual_guardian
+    prioridad: 1
+    fuente: "Manual del Guardián de La llamada de Cthulhu, capítulo 11: Tomos de conocimiento arcano"
+    archivo_aportado: "output.pdf"
+    paginas_pdf: "5-10"
+    estado: "oficial; descripción resumida y hechizos normalizados"
+
+  "Azathoth y otros|inglés|1919": *manual_guardian
+  "Confesiones de Clithanus, el monje loco|latín|400 (1674)": *manual_guardian
+  "Cthaat Aquadingen|inglés|s. XIV": *manual_guardian
+  "Cthaat Aquadingen|latín|s. XI–XII": *manual_guardian
+  "Cthulhu en el Necronomicón|inglés|1915 (1938)": *manual_guardian
+  "Cultes des Goules|francés|1702": *manual_guardian
+  "Cultos inconfesables|inglés|1845": *manual_guardian
+  "Cultos inconfesables|inglés|1909": *manual_guardian
+  "De Vermiis Mysteriis|latín|1542": *manual_guardian
+  "Escritura de Ponapé|inglés|1734": *manual_guardian
+  "Fragmentos de Celeno|inglés|1915": *manual_guardian
+  "Fragmentos de Eltdown|inglés|1912": *manual_guardian
+  "Fragmentos de G’harne|inglés|1919 (1931)": *manual_guardian
+  "El libro de Dzyan|inglés|": *manual_guardian
+  "El libro de Eibon|inglés|s. XV": *manual_guardian
+  "Liber Ivonis|latín|s. IX": *manual_guardian
+  "Livre d’Ivon|francés|s. XIII": *manual_guardian
+  "Magia auténtica|inglés|s. XVII": *manual_guardian
+  "El manuscrito de Sussex|inglés|1597": *manual_guardian
+  "Manuscritos pnakóticos|inglés|s. XV": *manual_guardian
+  "Massa di Requiem Per Shuggay|italiano|1768": *manual_guardian
+  "Los monstruos y su ralea|inglés|s. XVI": *manual_guardian
+  "Necronomicón|griego|c. 950": *manual_guardian
+  "Necronomicón|latín|1228": *manual_guardian
+  "Necronomicón|inglés|1586": *manual_guardian
+  "Unaussprechlichen Kulten|alemán|1839": *manual_guardian
+
+  "Revelaciones de Gla’aki|inglés|1842":
+    prioridad: 1
+    fuente: "Manual del Guardián de La llamada de Cthulhu, capítulo 11: Tomos de conocimiento arcano"
+    paginas: "233, 237-239"
+    indice_oficial: "https://www.chaosium.com/content/FreePDFs/CoC%207/Call%20of%20Cthulhu%207th%20Edition%20Index%20for%20Keepers%20and%20Investigators.pdf"
+    estado: "oficial; incluido en la tabla XI de tomos de los Mitos"
+
+  "Diarios de Walter Corbitt|inglés|s. XIX":
+    prioridad: 1
+    fuente: "Reglas de inicio rápido de La llamada de Cthulhu, La Casa Corbitt"
+    url: "https://www.chaosium.com/content/FreePDFs/CoC/CHA23131%20Call%20of%20Cthulhu%207th%20Edition%20Quick-Start%20Rules.pdf"
+    estado: "oficial; las tres libretas se representan juntas como un único objeto de juego"
+
+  "Pergamino de Sedefkar: La cabeza|turco otomano (escritura árabe)|s. XI": &sedefkar
+    prioridad: 3
+    fuente_oficial: "Horror en el Orient Express, ayudas oficiales: confirma la colección de cinco pergaminos y el asunto de cada uno"
+    url_oficial: "https://www.chaosium.com/content/FreePDFs/CoC/CHA23130%20-%20Horror%20on%20the%20Orient%20Express/CHA23130-6%20-%20Horror%20on%20the%20Orient%20Express%20Books%206%20-%20Handouts.pdf"
+    fuente_estadisticas: "YogWiki - Sedefkar Scrolls, referencia comunitaria de Horror en el Orient Express"
+    url_estadisticas: "https://yogwiki.cthulhueternal.com/wiki/Sedefkar_Scrolls"
+    estado: "estructura oficial y estadísticas comunitarias; colección dividida por componentes para usar cada pieza durante la partida"
+
+  "Pergamino de Sedefkar: La mano derecha|turco otomano (escritura árabe)|s. XI": *sedefkar
+  "Pergamino de Sedefkar: La mano izquierda|turco otomano (escritura árabe)|s. XI": *sedefkar
+  "Pergamino de Sedefkar: El vientre|turco otomano (escritura árabe)|s. XI": *sedefkar
+  "Pergamino de Sedefkar: Las piernas|turco otomano (escritura árabe)|s. XI": *sedefkar
+
+  "Malleus Maleficarum|latín|1486":
+    prioridad: 1
+    fuente: "Manual del Guardián de La llamada de Cthulhu, capítulo 11, Malleus Maleficarum"
+    pagina: 236
+    indice_oficial: "https://www.chaosium.com/content/FreePDFs/CoC%207/Call%20of%20Cthulhu%207th%20Edition%20Index%20for%20Keepers%20and%20Investigators.pdf"
+    estado: "oficial; es un libro de ocultismo, no un tomo de los Mitos"
+
+  "La Rama Dorada|inglés|1890": &ocultismo_manual
+    prioridad: 1
+    fuente: "Manual del Guardián de La llamada de Cthulhu, capítulo 11: Ejemplos de libros de ocultismo"
+    pagina: 236
+    indice_oficial: "https://www.chaosium.com/content/FreePDFs/CoC%207/Call%20of%20Cthulhu%207th%20Edition%20Index%20for%20Keepers%20and%20Investigators.pdf"
+    referencia_digital: "https://infinitelybad.wikidot.com/tomes"
+    estado: "oficial; contraste digital comunitario de la transcripción"
+
+  "El culto de las brujas en Europa occidental|inglés|1921": *ocultismo_manual
+  "La Clavícula de Salomón|latín (traducciones diversas)|s. XIV": *ocultismo_manual
+  "Isis sin velo|inglés|1877": *ocultismo_manual
+
+  "El libro de la magia sagrada de Abramelín|inglés|1898": &abramelin
+    prioridad: 1
+    fuente: "El cáliz saturnino, escenario de La llamada de Cthulhu"
+    publicacion_original: "Dead Light and Other Dark Turns"
+    editorial: "Chaosium"
+    edicion: "La llamada de Cthulhu 7.ª edición"
+    url_oficial: "https://www.chaosium.com/dead-light-and-other-dark-turns-pdf/"
+    estado: "oficial; versión inglesa de Mathers, distinta del manuscrito alemán"
+
+  "Das Buch Abramelin|alto alemán moderno temprano|s. XV": *abramelin
+
+  "Alma en caos|inglés|": &tabla_tomos_manual
+    prioridad: 1
+    fuente: "Manual del Guardián de La llamada de Cthulhu, tabla XI: Tomos de los Mitos"
+    paginas: "237-239"
+    indice_oficial: "https://www.chaosium.com/content/FreePDFs/CoC%207/Call%20of%20Cthulhu%207th%20Edition%20Index%20for%20Keepers%20and%20Investigators.pdf"
+    estado: "oficial; estadísticas incluidas en la tabla de tomos del Manual del Guardián"
+
+  "El ángel descarnado de la noche|inglés|": *tabla_tomos_manual
+  "La cábala de Saboth|griego|1686": *tabla_tomos_manual
+  "La canción de Yste|griego|": *tabla_tomos_manual
+  "Cánticos de Dhol|alemán|década de 1890": *tabla_tomos_manual
+  "Cánticos de Yuggya|inglés|": *tabla_tomos_manual
+  "Chronike von Nath|alemán|": *tabla_tomos_manual
+  "El cuarto libro de D’harsis|inglés|": *tabla_tomos_manual
+  "Daemonolatreia|inglés|1595": *tabla_tomos_manual
+  "De maléfica hechicería practicada en Nueva Inglaterra|inglés|c. 1600": *tabla_tomos_manual
+  "El dios negro de la locura|inglés|años 30": *tabla_tomos_manual
+  "En lugares oprimidos|inglés|": *tabla_tomos_manual
+  "Ética de Igor|latín|": *tabla_tomos_manual
+  "Fischbuch|alemán|1598": *tabla_tomos_manual
+  "La fundación oculta|inglés|c. 1980": *tabla_tomos_manual
+  "Ghorl Nigral|naacal|": *tabla_tomos_manual
+  "Hydrophinnae|latín|": *tabla_tomos_manual
+  "Las invocaciones de Dagón|inglés|": *tabla_tomos_manual
+  "Leyendas de Liqualia|inglés|": *tabla_tomos_manual
+  "Liber Damnatus Damnationum|inglés|1647": *tabla_tomos_manual
+  "El libro de Iod|inglés (traducción)|": *tabla_tomos_manual
+  "El libro de Iod|lengua antigua|": *tabla_tomos_manual
+  "El libro de Skelos|aklo|": *tabla_tomos_manual
+  "El libro negro|latín|": *tabla_tomos_manual
+  "El libro negro del cráneo|griego|": *tabla_tomos_manual
+  "El libro verde|inglés|": *tabla_tomos_manual
+  "La llave de Naacal|inglés|": *tabla_tomos_manual
+  "La magia y las artes negras|inglés|": *tabla_tomos_manual
+  "Maravillas de la naturaleza|inglés|": *tabla_tomos_manual
+  "Misterios secretos de Asia, con un comentario sobre el Ghorl Nigral|alemán|1847": *tabla_tomos_manual
+  "Mitología polinesia, con nota acerca del ciclo de leyendas de Cthulhu|inglés|1906": *tabla_tomos_manual
+  "Los moradores de las profundidades|francés|": *tabla_tomos_manual
+  "Narración de Johansen|inglés|": *tabla_tomos_manual
+  "Necrolatría|alemán|1702": *tabla_tomos_manual
+  "Othuum Omnicia|latín|": *tabla_tomos_manual
+  "El Pacífico prehistórico a la luz de la escritura de Ponapé|inglés|1911": *tabla_tomos_manual
+  "Los papiros de Ilarnek|inglés|": *tabla_tomos_manual
+  "Papiros de Mum-Rath|latín|": *tabla_tomos_manual
+  "Pasamos de vista|inglés|1964": *tabla_tomos_manual
+  "Los pergaminos de Pnom|hiperbóreo|": *tabla_tomos_manual
+  "Prehistoria en el Pacífico: investigación preliminar|inglés|1902": *tabla_tomos_manual
+  "Prodigios taumatúrgicos en la Canaán de Nueva Inglaterra|inglés|1788": *tabla_tomos_manual
+  "El pueblo del monolito|inglés|1926": *tabla_tomos_manual
+  "El que socava allá abajo|inglés|1936": *tabla_tomos_manual
+  "Los que velan en silencio|inglés|": *tabla_tomos_manual
+  "Los que vigilan desde el otro lado|inglés|años 40": *tabla_tomos_manual
+  "Reflexiones|inglés|": *tabla_tomos_manual
+  "Retazos de imperios perdidos|alemán|1809": *tabla_tomos_manual
+  "Revelaciones cthónicas|laosiano|": *tabla_tomos_manual
+  "Las revelaciones de Hali|inglés|1913": *tabla_tomos_manual
+  "El rey de amarillo|inglés|1895": *tabla_tomos_manual
+  "Ritos negros|egipcio|": *tabla_tomos_manual
+  "Rituales sarracenos|inglés|s. XIX": *tabla_tomos_manual
+  "Rituales toscanos|italiano|": *tabla_tomos_manual
+  "Rituales yhe|egipcio|": *tabla_tomos_manual
+  "Saducismus Triumphatus|inglés|1681": *tabla_tomos_manual
+  "Sapientia Maglorum|latín|": *tabla_tomos_manual
+  "Los siete libros crípticos de Hsan|chino|s. II": *tabla_tomos_manual
+  "Sutra negra|birmano|c. 700": *tabla_tomos_manual
+  "Las tabletas de Zanthu|inglés|1916": *tabla_tomos_manual
+  "El testamento de Carnamagos|griego|s. XII": *tabla_tomos_manual
+  "El texto de R’lyeh|chino|c. 300 a. C.": *tabla_tomos_manual
+  "Transcripciones de Geph|inglés|": *tabla_tomos_manual
+  "Unter Zee Kulten|alemán|s. XVII": *tabla_tomos_manual
+  "Uralteschrecken|alemán|s. XIX": *tabla_tomos_manual
+  "Vida de Eibon|francés|": *tabla_tomos_manual
+  "Visiones de Yaddith|inglés|1927": *tabla_tomos_manual
+  "Von denen Verdammten|alemán (reimpresión)|1907": *tabla_tomos_manual
+  "Von denen Verdammten Oder|alemán|": *tabla_tomos_manual
+
+  "Life as a God|inglés|c. 1810":
+    prioridad: 1
+    fuente: "Las máscaras de Nyarlathotep, capítulo de Nueva York"
+    autores_publicacion: "Larry DiTillio y Lynn Willis"
+    url_ayudas_oficiales: "https://www.chaosium.com/content/FreePDFs/CoC/Adventures/CHA23118-F%20-%20Masks%20of%20Nyarlathotep%20-%20Introduction%20and%20Handouts.pdf"
+    estado: "oficial; estadísticas de la edición clásica y título corregido respecto del candidato 'Vida de África'"

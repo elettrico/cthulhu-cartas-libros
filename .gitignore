@@ -1,0 +1,20 @@
+/output/*
+!/output/cards/
+!/output/cards/.gitkeep
+
+# Dependencias locales
+.bundle/
+vendor/
+node_modules/
+.artifact-node/
+
+# Salidas regenerables
+output/
+outputs/
+tmp/
+
+# Archivos del sistema/editor
+.DS_Store
+Thumbs.db
+*.swp
+*~

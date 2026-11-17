@@ -1,0 +1,161 @@
+card_border:
+  x: 0mm
+  y: 0mm
+  width: 70mm
+  height: 99mm
+  fill_color: '#ffffff'
+  stroke_color: '#8b5e3c'
+  stroke_width: 0.35mm
+
+watermark:
+  x: 37mm
+  y: 57mm
+  width: 50mm
+  height: 50mm
+  alpha: 0.18
+
+title_band:
+  x: 0mm
+  y: 0mm
+  width: 70mm
+  height: 15mm
+  fill_color: '#7a4e2d'
+  stroke_width: 0
+
+metadata_band:
+  x: 0mm
+  y: 15mm
+  width: 70mm
+  height: 5mm
+  fill_color: '#4a3426'
+  stroke_width: 0
+
+title:
+  x: 3mm
+  y: 1mm
+  width: 64mm
+  height: 13mm
+  font: 'Arial Bold 16'
+  color: '#ffffff'
+  align: center
+  valign: middle
+  overflow: shrink
+
+metadata:
+  x: 2mm
+  y: 15mm
+  width: 66mm
+  height: 5mm
+  font: 'Arial 8.5'
+  color: '#ffffff'
+  valign: middle
+  overflow: shrink
+
+section_label:
+  x: 2mm
+  width: 66mm
+  height: 5mm
+  font: 'Arial Bold 9'
+  color: '#4a3426'
+  valign: middle
+
+section_line:
+  x1: 2mm
+  x2: 68mm
+  stroke_color: '#999999'
+  stroke_width: 0.15mm
+
+content:
+  x: 2mm
+  y: 27mm
+  width: 66mm
+  height: 20mm
+  font: 'Arial 9'
+  color: '#000000'
+  valign: top
+  overflow: shrink
+
+spells:
+  x: 2mm
+  y: 54mm
+  width: 66mm
+  height: 20mm
+  font: 'Arial 8.5'
+  color: '#000000'
+  valign: top
+  overflow: shrink
+
+stat_label:
+  x: 2mm
+  width: 39mm
+  height: 5.5mm
+  font: 'Arial Bold 8.5'
+  color: '#000000'
+  valign: middle
+  overflow: shrink
+
+stat_value:
+  x: 42mm
+  width: 26mm
+  height: 5.5mm
+  font: 'Arial 9'
+  color: '#000000'
+  valign: middle
+  overflow: shrink
+
+stat_line:
+  x1: 2mm
+  x2: 68mm
+  stroke_color: '#999999'
+  stroke_width: 0.15mm
+
+back_frame:
+  x: 0mm
+  y: 0mm
+  width: 70mm
+  height: 99mm
+  fill_color: '#ffffff'
+  stroke_color: '#8b5e3c'
+  stroke_width: 0.7mm
+
+back_logo:
+  x: 3.5mm
+  y: 2mm
+  width: 63mm
+  height: 17mm
+
+back_type:
+  x: 3.5mm
+  y: 18mm
+  width: 63mm
+  height: 63mm
+
+back_title:
+  x: 4mm
+  y: 25mm
+  width: 62mm
+  height: 48mm
+  font: 'Arial Bold 18'
+  color: '#000000'
+  align: center
+  valign: middle
+  overflow: shrink
+
+back_origin_line:
+  x1: 8mm
+  y1: 88mm
+  x2: 62mm
+  y2: 88mm
+  stroke_color: '#8b5e3c'
+  stroke_width: 0.15mm
+
+back_origin:
+  x: 3mm
+  y: 89mm
+  width: 64mm
+  height: 7mm
+  font: 'Arial 9.5'
+  color: '#4a3426'
+  align: center
+  valign: middle
+  overflow: shrink
