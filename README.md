@@ -1,6 +1,6 @@
 # Cartas de libros para La llamada de Cthulhu
 
-Mazo imprimible en español con 111 cartas de libros, grimorios y tomos para
+Mazo imprimible en español con 117 cartas de libros, grimorios y tomos para
 *La llamada de Cthulhu*, séptima edición. Cada carta reúne la información útil
 durante la partida: idioma, fecha, autor, contenido, hechizos, pérdida de
 Cordura, ganancia de Mitos de Cthulhu, puntuación de Mitos, Ocultismo y tiempo
@@ -99,7 +99,7 @@ aspecto de las cartas, edita `layout.yml`.
 
 ## Estructura del proyecto
 
-- `data/libros.xlsx`: datos de las 111 cartas;
+- `data/libros.xlsx`: datos de las 117 cartas;
 - `data/fuentes.yml`: referencias y criterios de documentación;
 - `deck.rb`: composición y generación de las cartas;
 - `layout.yml`: posiciones, tamaños, tipografías y colores;

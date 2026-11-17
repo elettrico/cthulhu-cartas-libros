@@ -184,3 +184,18 @@ entradas:
     autores_publicacion: "Larry DiTillio y Lynn Willis"
     url_ayudas_oficiales: "https://www.chaosium.com/content/FreePDFs/CoC/Adventures/CHA23118-F%20-%20Masks%20of%20Nyarlathotep%20-%20Introduction%20and%20Handouts.pdf"
     estado: "oficial; estadísticas de la edición clásica y título corregido respecto del candidato 'Vida de África'"
+
+  "Sectas oscuras de África|inglés|1920": &mascaras_7e
+    prioridad: 1
+    fuente: "Las máscaras de Nyarlathotep, séptima edición, apéndice C: Tomos"
+    editorial: "Chaosium"
+    edicion: "La llamada de Cthulhu 7.ª edición"
+    url_oficial: "https://www.chaosium.com/masks-of-nyarlathotep-pdf-1/"
+    paginas: "641-645"
+    estado: "oficial; estadísticas, descripción y hechizos resumidos en español"
+
+  "Entre las piedras|inglés|1918": *mascaras_7e
+  "Équinoxe Divisé|francés|1807": *mascaras_7e
+  "Canto del djinn (Oghniat Min al Jinn)|árabe|c. 797": *mascaras_7e
+  "Los ritos negros de Luveh-Keraphf|jeroglíficos egipcios|c. 1786–1633 a. C.": *mascaras_7e
+  "Inteligencias maravillosas|inglés|s. XVII": *mascaras_7e
